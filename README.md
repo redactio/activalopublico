@@ -1,132 +1,132 @@
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACTIVÁ LO PÚBLICO</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #CAE8FF;
-      color: #051F3E;
-      font-size: 5rem;
-    }
+<head><style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #051F3E;
+    font-size: 5rem;
+  }
 
-    header {
-      background-color: #050A30;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
+  header {
+    background-color: #050A30;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
 
-    header h1 {
-      font-size: 3rem;
-      text-transform: uppercase;
-    }
+  header h1 {
+    font-size: 4.5rem; /* Más grande */
+    text-transform: uppercase;
+  }
 
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
 
-    h2 {
-      color: #050A30;
-      border-bottom: 2px solid #5A77A6;
-      padding-bottom: 0.5rem;
-      margin-top: 2rem;
-      background-color: #7393C6;
-      padding: 1rem;
-      color: white;
-      border-radius: 0.5rem;
-    }
+  h2 {
+    background-color: #7393C6;
+    padding: 1.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center; /* Centrado */
+    margin-top: 2rem;
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+  }
 
-    footer {
-      background-color: #051F3E;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
+  h2:nth-of-type(1) { animation-delay: 0.3s; }
+  h2:nth-of-type(2) { animation-delay: 0.6s; }
+  h2:nth-of-type(3) { animation-delay: 0.9s; }
+  h2:nth-of-type(4) { animation-delay: 1.2s; }
+  h2:nth-of-type(5) { animation-delay: 1.5s; }
+  h2:nth-of-type(6) { animation-delay: 1.8s; }
+  h2:nth-of-type(7) { animation-delay: 2.1s; }
+  h2:nth-of-type(8) { animation-delay: 2.4s; }
 
-    .contacto {
-      background-color: #7393C6;
-      padding: 1rem;
-      color: white;
-    }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-    .timeline {
-      position: relative;
-      margin: 2rem 0;
-      padding-left: 30px;
-      border-left: 4px solid #5A77A6;
-    }
+  footer {
+    background-color: #051F3E;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
 
-    .event {
-      margin-bottom: 1.5rem;
-      position: relative;
-    }
+  .contacto {
+    background-color: #7393C6;
+    padding: 1rem;
+    color: white;
+  }
 
-    .event::before {
-      content: '';
-      position: absolute;
-      left: -10px;
-      top: 0.3rem;
-      width: 15px;
-      height: 15px;
-      background-color: #050A30;
-      border-radius: 50%;
-      border: 2px solid #5A77A6;
-    }
+  .timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 30px;
+    border-left: 4px solid #5A77A6;
+  }
 
-    .event h4 {
-      margin: 0;
-      color: #050A30;
-    }
+  .event {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
 
-    .event p {
-      margin: 0.2rem 0 0 0;
-    }
+  .event::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0.3rem;
+    width: 15px;
+    height: 15px;
+    background-color: #050A30;
+    border-radius: 50%;
+    border: 2px solid #5A77A6;
+  }
 
-    @keyframes escribir {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
+  .event h4 {
+    margin: 0;
+    color: #050A30;
+  }
 
-    @keyframes titilar {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
+  .event p {
+    margin: 0.2rem 0 0 0;
+  }
 
-    .mision-destacada {
-      background-color: #050A30;
-      color: #FFFFFF;
-      padding: 2rem;
-      margin-top: 2rem;
-      text-align: center;
-      border-radius: 1rem;
-    }
+  .mision-destacada {
+    background-color: #050A30;
+    color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
 
-    .mision-animada {
-      font-family: Impact, sans-serif;
-      font-size: 1.8rem;
-      display: inline-block;
-      white-space: nowrap;
-      overflow: hidden;
-    }
+  .mision-animada {
+    font-family: Impact, sans-serif;
+    font-size: 1.8rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
-    .mision-animada span {
-      opacity: 0;
-      animation: escribir 0.05s forwards;
-    }
+  .mision-animada span {
+    opacity: 0;
+    animation: escribir 0.05s forwards;
+  }
 
-    .mision-animada.completa {
-      animation: titilar 1s ease-in-out 3s 2;
-    }
+  .mision-animada.completa {
+    animation: titilar 1s ease-in-out 3s 2;
+  }
 
-    .criterios li {
-      margin-bottom: 0.8rem;
-    }
-  </style>
+  .criterios li {
+    margin-bottom: 0.8rem;
+  }
+</style>
 </head>
 <body>
 
