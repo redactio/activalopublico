@@ -39,16 +39,19 @@
       margin: auto;
     }
 
-    h2 {
-      background: #051F3E;
-      padding: 1.5rem;
-      color: white;
-      border-radius: 0.5rem;
-      text-align: center;
-      margin-top: 1.5rem;
-      opacity: 0;
-      animation: fadeIn 1.2s ease forwards;
-    }
+  h2 {
+  background: #051F3E;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
 
     h2:nth-of-type(1) { animation-delay: 0.3s; }
     h2:nth-of-type(2) { animation-delay: 0.6s; }
