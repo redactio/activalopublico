@@ -45,7 +45,7 @@
       color: white;
       border-radius: 0.5rem;
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       opacity: 0;
       animation: fadeIn 1.2s ease forwards;
     }
@@ -138,7 +138,7 @@
     }
 
     .mision-animada {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
       display: inline-block;
       white-space: nowrap;
