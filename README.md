@@ -328,11 +328,11 @@
   animarFrase();
 </script>
 
-</body>
-</html>
-
 <div hidden>
   ![Logo-Actio-png](https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab)
   ![LOGO-Botin-png](https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67)
   ![Captura de pantalla 2025-05-16 215345](https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e)
 </div>
+
+</body>
+</html>
