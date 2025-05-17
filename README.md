@@ -278,7 +278,7 @@
     </ul>
 
     <h2>Contenidos del programa</h2>
-    <p>Formación intensiva, mentorías, actividades prácticas, encuentros con referentes públicos.</p>
+    <p>“Lo público” como vocación. Democracia y participación ciudadana. El desarrollo de la Argentina. Transparencia, modernización e innovación. Diversidad, inclusión y equidad. Política internacional y latinoamericana. Tercer sector y sector privado..</p>
   </section>
 
   <footer class="contacto">
