@@ -17,14 +17,13 @@
     header {
       background: linear-gradient(135deg, #050A30, #5A77A6);
       color: white;
-      padding: 4rem 2rem;
-      max-width: 900px;
-      text-align: center;
+      padding: 2rem 2rem;
+      text-align: left;
       border-radius: 0.2rem;
     }
 
     header h1 {
-      font-size: 8rem;
+      font-size: 10rem;
       text-transform: uppercase;
       margin: 0;
     }
