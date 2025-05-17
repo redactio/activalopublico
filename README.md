@@ -39,19 +39,19 @@
       margin: auto;
     }
 
-  h2 {
-  background: #051F3E;
-  padding: 1.5rem;
-  color: white;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 1.5rem;
-  opacity: 0;
-  animation: fadeIn 1.2s ease forwards;
-}
+    h2 {
+      background: #051F3E;
+      padding: 1.5rem;
+      color: white;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 1.5rem;
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+    }
 
     h2:nth-of-type(1) { animation-delay: 0.3s; }
     h2:nth-of-type(2) { animation-delay: 0.6s; }
@@ -138,6 +138,10 @@
       margin-top: 2rem;
       text-align: center;
       border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px; /* puedes ajustar esta altura si quieres más espacio vertical */
     }
 
     .mision-animada {
@@ -157,8 +161,12 @@
       animation: titilar 1s ease-in-out 3s 2;
     }
 
-    .criterios li {
-      margin-bottom: 0.8rem;
+    .criterios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      list-style-position: inside;
     }
 
     @keyframes escribir {
