@@ -278,12 +278,12 @@
     </ul>
 
     <h2>Contenidos del programa</h2>
-    <p>“Lo público” como vocación. Democracia y participación ciudadana. El desarrollo de la Argentina. Transparencia, modernización e innovación. Diversidad, inclusión y equidad. Política internacional y latinoamericana. Tercer sector y sector privado..</p>
+    <p>“Lo público” como vocación. Democracia y participación ciudadana. El desarrollo de la Argentina. Transparencia, modernización e innovación. Diversidad, inclusión y equidad. Política internacional y latinoamericana. Tercer sector y sector privado.</p>
   </section>
 
   <footer class="contacto">
     <p>redactioargentina@gmail.com | @red.actio</p>
-    <p>CUIL No. 30-71735862-3</p>
+    <p>CUIT No. 30-71735862-3</p>
   </footer>
 
   <script>
