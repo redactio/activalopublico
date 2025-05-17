@@ -19,6 +19,7 @@
       color: white;
       padding: 4rem 2rem;
       text-align: center;
+      border-radius: 0.2rem;
     }
 
     header h1 {
@@ -39,7 +40,7 @@
     }
 
     h2 {
-      background: #050A30;
+      background: #051F3E;
       padding: 1.5rem;
       color: white;
       border-radius: 0.5rem;
