@@ -22,13 +22,13 @@
     }
 
     header h1 {
-      font-size: 1.5rem;
+      font-size: 3rem;
       text-transform: uppercase;
       margin: 0;
     }
 
     header p {
-      font-size: 3rem;
+      font-size: 1.5rem;
       margin-top: 1rem;
     }
 
@@ -170,10 +170,9 @@
 </head>
 <body>
   <header>
-    <h1>Activá lo Público</h1>
+    <h1>Activá lo público</h1>
     <p>El programa para enamorar a las y los jóvenes de lo público</p>
   </header>
-
   <section>
     <h2>¿Quiénes somos?</h2>
     <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración para promover y fortalecer la función pública en el país.</p>
