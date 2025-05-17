@@ -106,7 +106,6 @@
     }
 
     .footer-logos {
-      position: absolute;
       bottom: 1rem;
       right: 1rem;
       display: flex;
@@ -114,8 +113,10 @@
     }
 
     .footer-logos img {
-      height: 50px;
-      border-radius: 0.5rem;
+       display: flex;
+       justify-content: flex-end;
+       gap: 1rem;
+       margin-top: 1rem;
      }
     
     .contacto {
