@@ -3,13 +3,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ACTIVÁ LO PÚBLICO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Nunito', sans-serif;
       margin: 0;
       background-color: #ffffff;
       color: #051F3E;
-      font-size: 5rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
 
     header {
@@ -20,13 +22,13 @@
     }
 
     header h1 {
-      font-size: 6rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       margin: 0;
     }
 
     header p {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-top: 1rem;
     }
 
@@ -37,7 +39,7 @@
     }
 
     h2 {
-      background-color: #7393C6;
+      background: linear-gradient(135deg, #050A30, #5A77A6);
       padding: 1.5rem;
       color: white;
       border-radius: 0.5rem;
@@ -61,13 +63,13 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .inscribite-btn {
+    .postulate-btn {
       display: block;
       width: fit-content;
       margin: 2rem auto;
-      background-color: #5A77A6;
+      background: linear-gradient(135deg, #050A30, #5A77A6);
       color: white;
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 1rem 2rem;
       border: none;
       border-radius: 0.6rem;
@@ -75,7 +77,7 @@
       transition: background-color 0.3s;
     }
 
-    .inscribite-btn:hover {
+    .postulate-btn:hover {
       background-color: #3b558a;
     }
 
@@ -135,8 +137,8 @@
     }
 
     .mision-animada {
-      font-family: Impact, sans-serif;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      font-weight: bold;
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
@@ -179,8 +181,8 @@
     <h2>¿Por qué “Activá lo Público”?</h2>
     <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
 
-    <a class="inscribite-btn" href="https://www.redactio.github.io/activalopublico" target="_blank">¡Inscribite!</a>
-
+   <a href="https://redactio.github.io/activalopublico" class="postulate-btn">¡Click acá para inscribirte!</a>
+   
     <h2>Nuestros aliados</h2>
     <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
 
