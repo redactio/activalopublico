@@ -304,35 +304,35 @@
     </div>
   </footer>
 
-<script>
-  const contenedor = document.getElementById("mision");
-  const frase = "Que más de las y los mejores se enamoren de lo público";
+  <script>
+    const contenedor = document.getElementById("mision");
+    const frase = "Que más de las y los mejores se enamoren de lo público";
 
-  function animarFrase() {
-    contenedor.innerHTML = "";
-    frase.split("").forEach((letra, index) => {
-      const span = document.createElement("span");
-      span.textContent = letra;
-      span.style.animationDelay = ${index * 0.05}s;
-      contenedor.appendChild(span);
-    });
-    const duracionAparicion = frase.length * 50 + 500;
-    setTimeout(() => {
-      contenedor.classList.add("blink");
-    }, duracionAparicion);
-    setTimeout(() => {
-      contenedor.classList.remove("blink");
-      animarFrase();
-    }, duracionAparicion + 1500);
-  }
-  animarFrase();
-</script>
+    function animarFrase() {
+      contenedor.innerHTML = "";
+      frase.split("").forEach((letra, index) => {
+        const span = document.createElement("span");
+        span.textContent = letra;
+        span.style.animationDelay = `${index * 0.05}s`;
+        contenedor.appendChild(span);
+      });
+      const duracionAparicion = frase.length * 50 + 500;
+      setTimeout(() => {
+        contenedor.classList.add("blink");
+      }, duracionAparicion);
+      setTimeout(() => {
+        contenedor.classList.remove("blink");
+        animarFrase();
+      }, duracionAparicion + 1500);
+    }
+
+    animarFrase();
+  </script>
 
 <div hidden>
   ![Logo-Actio-png](https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab)
   ![LOGO-Botin-png](https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67)
   ![Captura de pantalla 2025-05-16 215345](https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e)
 </div>
-
 </body>
 </html>
