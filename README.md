@@ -104,20 +104,6 @@
       text-align: center;
       padding: 1rem;
     }
-
-    .footer-logos {
-      bottom: 1rem;
-      right: 1rem;
-      display: flex;
-      gap: 1rem;
-    }
-
-    .footer-logos img {
-       display: flex;
-       justify-content: flex-end;
-       gap: 1rem;
-       margin-top: 1rem;
-     }
     
     .contacto {
       background-color: #7393C6;
@@ -298,11 +284,6 @@
   <footer class="contacto">
     <p>redactioargentina@gmail.com | @red.actio</p>
     <p>CUIL No. 00-000000000-0</p>
-    <div class="footer-logos">
-      <img src="https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab" alt="Logo-Actio-png" />
-      <img src="https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67" alt="LOGO-Botin-png" />
-      <img src="https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e" alt="Captura de pantalla 2025-05-16 215345" />     
-    </div>
   </footer>
 
   <script>
@@ -330,10 +311,10 @@
     animarFrase();
   </script>
 
-<div hidden>
-  ![Logo-Actio-png](https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab)
-  ![LOGO-Botin-png](https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67)
-  ![Captura de pantalla 2025-05-16 215345](https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e)
-</div>
+  <div hidden>
+    ![Logo-Actio-png](https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab)
+    ![LOGO-Botin-png](https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67)
+    ![Captura de pantalla 2025-05-16 215345](https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e)
+  </div>
 </body>
 </html>
