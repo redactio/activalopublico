@@ -161,12 +161,8 @@
       animation: titilar 1s ease-in-out 3s 2;
     }
 
-    .criterios {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0;
-      list-style-position: inside;
+    .criterios li {
+      margin-bottom: 0.8rem;
     }
 
     @keyframes escribir {
