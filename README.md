@@ -22,14 +22,14 @@
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 5rem;
       text-transform: uppercase;
       margin: 0;
     }
 
     header p {
       font-size:1rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     section {
