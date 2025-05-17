@@ -21,7 +21,7 @@
       text-align: left;
       border-radius: 0.2rem;
     }
-     
+
     .header-logos {
       position: absolute;
       top: 1rem;
@@ -104,7 +104,7 @@
       text-align: center;
       padding: 1rem;
     }
-    
+
     .contacto {
       background-color: #7393C6;
       padding: 1rem;
@@ -154,7 +154,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 150px; /* puedes ajustar esta altura si quieres más espacio vertical */
+      height: 150px;
     }
 
     .mision-animada {
