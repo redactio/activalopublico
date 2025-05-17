@@ -3,266 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACTIVÁ LO PÚBLICO</title>
+  <title>Activá lo Público</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --celeste: #4DB6E9;
+      --azul: #243782;
+      --amarillo: #FFF200;
+      --rojo: #9C1E25;
+      --gris: #E6E6E6;
+    }
+
+    * {
       margin: 0;
-      background-color: #ffffff; /* Fondo blanco */
-      color: #051F3E;
-      font-size: 5rem;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: white;
+      color: var(--azul);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #050A30;
+      background: linear-gradient(to right, var(--celeste), var(--azul));
       color: white;
       padding: 2rem;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 4.5rem; /* Más grande */
-      text-transform: uppercase;
+    header img {
+      max-height: 60px;
+      vertical-align: middle;
+      margin: 0 1rem;
+    }
+
+    h1 {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 2.5rem;
     }
 
     section {
-      padding: 2rem;
+      padding: 3rem 1rem;
       max-width: 900px;
       margin: auto;
     }
 
-    h2 {
-      background-color: #7393C6;
-      padding: 1.5rem;
-      color: white;
-      border-radius: 0.5rem;
-      text-align: center; /* Centrado */
-      margin-top: 2rem;
-      opacity: 0;
-      animation: fadeIn 1.2s ease forwards;
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: var(--gris);
     }
 
-    h2:nth-of-type(1) { animation-delay: 0.3s; }
-    h2:nth-of-type(2) { animation-delay: 0.6s; }
-    h2:nth-of-type(3) { animation-delay: 0.9s; }
-    h2:nth-of-type(4) { animation-delay: 1.2s; }
-    h2:nth-of-type(5) { animation-delay: 1.5s; }
-    h2:nth-of-type(6) { animation-delay: 1.8s; }
-    h2:nth-of-type(7) { animation-delay: 2.1s; }
-    h2:nth-of-type(8) { animation-delay: 2.4s; }
+    .logos img {
+      max-height: 80px;
+    }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      background-color: var(--rojo);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
     footer {
-      background-color: #051F3E;
-      color: white;
+      background-color: var(--gris);
+      color: #555;
       text-align: center;
       padding: 1rem;
-    }
-
-    .contacto {
-      background-color: #7393C6;
-      padding: 1rem;
-      color: white;
-    }
-
-    .timeline {
-      position: relative;
-      margin: 2rem 0;
-      padding-left: 30px;
-      border-left: 4px solid #5A77A6;
-    }
-
-    .event {
-      margin-bottom: 1.5rem;
-      position: relative;
-    }
-
-    .event::before {
-      content: '';
-      position: absolute;
-      left: -10px;
-      top: 0.3rem;
-      width: 15px;
-      height: 15px;
-      background-color: #050A30;
-      border-radius: 50%;
-      border: 2px solid #5A77A6;
-    }
-
-    .event h4 {
-      margin: 0;
-      color: #050A30;
-    }
-
-    .event p {
-      margin: 0.2rem 0 0 0;
-    }
-
-    .mision-destacada {
-      background-color: #050A30;
-      color: #FFFFFF;
-      padding: 2rem;
-      margin-top: 2rem;
-      text-align: center;
-      border-radius: 1rem;
-    }
-
-    .mision-animada {
-      font-family: Impact, sans-serif;
-      font-size: 1.8rem;
-      display: inline-block;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    .mision-animada span {
-      opacity: 0;
-      animation: escribir 0.05s forwards;
-    }
-
-    .mision-animada.completa {
-      animation: titilar 1s ease-in-out 3s 2;
-    }
-
-    .criterios li {
-      margin-bottom: 0.8rem;
-    }
-
-    @keyframes escribir {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes titilar {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Activá lo Público</h1>
-    <p>El programa para enamorar a las y los jóvenes de lo público</p>
+    <div>
+      <img src="./mnt/data/Logo-Actio-png.png" alt="Red Actio" />
+      <h1>Activá lo Público</h1>
+      <img src="./mnt/data/LOGO-Botin-png.png" alt="Fundación Botín" />
+    </div>
   </header>
 
   <section>
-    <h2>¿Quiénes somos?</h2>
-    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración para promover y fortalecer la función pública en el país.</p>
-
-    <h2>¿Por qué “Activá lo Público”?</h2>
-    <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
-
-    <h2>Nuestros aliados</h2>
-    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
-
-    <h2>Misión</h2>
-    <div class="mision-destacada">
-      <p class="mision-animada" id="mision"></p>
+    <h2>Un programa para despertar tu vocación pública</h2>
+    <p>
+      "Activá lo Público" es una iniciativa de la Red Argentina de Servidores Públicos con el acompañamiento de la Fundación Botín. Está destinado a jóvenes de entre 18 y 21 años que quieran explorar su vocación por el servicio público.
+    </p>
+    <p>
+      A través de actividades participativas, mentorías y espacios de reflexión, buscamos despertar ese "gen" del liderazgo público que muchos llevan dentro.
+    </p>
+    <div class="cta">
+      <a href="#">¡Postulate ahora!</a>
     </div>
-
-    <h2>Visión</h2>
-    <p>Llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.</p>
-
-    <h2>Público objetivo</h2>
-    <p>Jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.</p>
-
-    <h2>Cronograma</h2>
-    <div class="timeline">
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>17 de mayo</h3>
-          <p>Lanzamiento del programa y apertura de inscripciones</p>
-        </div>
-      </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>7 de junio</h3>
-          <p>Cierre de postulaciones</p>
-        </div>
-      </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>15 de junio al 2 de julio</h3>
-          <p>Evaluación de postulaciones y entrevistas</p>
-        </div>
-      </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>9 de julio</h3>
-          <p>Anuncio de seleccionados para la etapa virtual</p>
-        </div>
-      </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>6 de agosto</h3>
-          <p>Inicio de la etapa virtual</p>
-        </div>
-      </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>24 de septiembre</h3>
-          <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
-        </div>
-      </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>10, 11 y 12 de octubre</h3>
-          <p>Actividad presencial</p>
-        </div>
-      </div>
-    </div>
-
-    <h2>Criterios de selección</h2>
-    <ul class="criterios">
-      <li>Poseer nacionalidad argentina.</li>
-      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
-      <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
-      <li>Contar con buen expediente académico y compromiso social.</li>
-      <li>Vocación de servicio e interés por ser agente de cambio.</li>
-    </ul>
-
-    <h2>Contenidos del programa</h2>
-    <p>Formación intensiva, mentorías, actividades prácticas, encuentros con referentes públicos.</p>
   </section>
 
-  <footer class="contacto">
-    <p>redactioargentina@gmail.com | @red.actio</p>
-    <p>CUIL No. 00-000000000-0</p>
+  <div class="logos">
+    <img src="./mnt/data/Captura de pantalla 2025-05-16 215345.png" alt="Logo Activá lo Público" />
+    <img src="./mnt/data/Logo-Actio-png.png" alt="Red Actio" />
+    <img src="./mnt/data/LOGO-Botin-png.png" alt="Fundación Botín" />
+  </div>
+
+  <footer>
+    <p>© 2025 Activá lo Público. Una iniciativa de la Red Actio con el apoyo de la Fundación Botín.</p>
   </footer>
-
-<script>
-  const contenedor = document.getElementById("mision");
-  const frase = "Que más de las y los mejores se enamoren de lo público";
-
-  function animarFrase() {
-    contenedor.innerHTML = ""; // limpiar para reiniciar
-
-    frase.split("").forEach((letra, index) => {
-      const span = document.createElement("span");
-      span.textContent = letra;
-      span.style.animationDelay = `${index * 0.05}s`;
-      contenedor.appendChild(span);
-    });
-
-    const duracionAparicion = frase.length * 50 + 500;
-
-    setTimeout(() => {
-      contenedor.classList.add("blink");
-    }, duracionAparicion);
-
-    setTimeout(() => {
-      contenedor.classList.remove("blink");
-      animarFrase();
-    }, duracionAparicion + 1500);
-  }
-
-  animarFrase();
-</script>
-
 </body>
 </html>
