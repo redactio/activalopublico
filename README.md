@@ -15,14 +15,13 @@
     }
 
     header {
-      position: relative;
       background: linear-gradient(135deg, #050A30, #5A77A6);
       color: white;
       padding: 2rem 2rem;
       text-align: left;
       border-radius: 0.2rem;
     }
-
+     
     .header-logos {
       position: absolute;
       top: 1rem;
@@ -51,10 +50,6 @@
       padding: 2rem;
       max-width: 900px;
       margin: auto;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
 
     h2 {
@@ -103,12 +98,11 @@
       background-color: #3b558a;
     }
 
-    footer.contacto {
-      position: relative;
+    footer {
       background-color: #051F3E;
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
     }
 
     .footer-logos {
@@ -122,6 +116,12 @@
     .footer-logos img {
       height: 50px;
       border-radius: 0.5rem;
+     }
+    
+    .contacto {
+      background-color: #7393C6;
+      padding: 1rem;
+      color: white;
     }
 
     .timeline {
@@ -167,7 +167,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 150px;
+      height: 150px; /* puedes ajustar esta altura si quieres más espacio vertical */
     }
 
     .mision-animada {
@@ -205,24 +205,24 @@
 <body>
   <header>
     <div class="header-logos">
-      <img src="https://pbs.twimg.com/profile_images/1283194599230656518/w-jtPYkO_400x400.jpg" alt="Logo Red Actio" />
-      <img src="https://www.voluntare.org/wp-content/uploads/2022/07/logo-fundacion-botin.png" alt="Logo Fundación Botín" />
+      <img src="https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab" alt="Logo-Actio-png" />
+      <img src="https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67" alt="LOGO-Botin-png" />
+      <img src="https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e" alt="Captura de pantalla 2025-05-16 215345" />
     </div>
     <h1>Activá lo público</h1>
     <p>El programa para enamorar a las y los jóvenes de lo público</p>
   </header>
-
   <section>
     <h2>¿Quiénes somos?</h2>
-    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina...</p>
+    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración para promover y fortalecer la función pública en el país.</p>
 
     <h2>¿Por qué “Activá lo Público”?</h2>
-    <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público...</p>
+    <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
 
-    <a href="https://redactio.github.io/activalopublico" class="postulate-btn">¡Click acá para inscribirte!</a>
-
+   <a href="https://redactio.github.io/activalopublico" class="postulate-btn">¡Click acá para inscribirte!</a>
+   
     <h2>Nuestros aliados</h2>
-    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina...</p>
+    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
 
     <h2>Misión</h2>
     <div class="mision-destacada">
@@ -230,30 +230,64 @@
     </div>
 
     <h2>Visión</h2>
-    <p>Llegar a jóvenes de Argentina a través de una experiencia federal...</p>
+    <p>Llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.</p>
 
     <h2>Público objetivo</h2>
-    <p>Jóvenes de Argentina de 18 a 21 años...</p>
+    <p>Jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.</p>
 
     <h2>Cronograma</h2>
     <div class="timeline">
-      <!-- Fechas del cronograma -->
-      <div class="event"><h4>17 de mayo</h4><p>Lanzamiento del programa...</p></div>
-      <div class="event"><h4>7 de junio</h4><p>Cierre de postulaciones</p></div>
-      <div class="event"><h4>15 de junio al 2 de julio</h4><p>Evaluación...</p></div>
-      <div class="event"><h4>9 de julio</h4><p>Anuncio de seleccionados</p></div>
-      <div class="event"><h4>6 de agosto</h4><p>Inicio etapa virtual</p></div>
-      <div class="event"><h4>24 de septiembre</h4><p>Fin de la etapa virtual</p></div>
-      <div class="event"><h4>10, 11 y 12 de octubre</h4><p>Actividad presencial</p></div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>17 de mayo</h3>
+          <p>Lanzamiento del programa y apertura de inscripciones</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>7 de junio</h3>
+          <p>Cierre de postulaciones</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>15 de junio al 2 de julio</h3>
+          <p>Evaluación de postulaciones y entrevistas</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>9 de julio</h3>
+          <p>Anuncio de seleccionados para la etapa virtual</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>6 de agosto</h3>
+          <p>Inicio de la etapa virtual</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>24 de septiembre</h3>
+          <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>10, 11 y 12 de octubre</h3>
+          <p>Actividad presencial</p>
+        </div>
+      </div>
     </div>
 
     <h2>Criterios de selección</h2>
     <ul class="criterios">
       <li>Poseer nacionalidad argentina.</li>
-      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive.</li>
-      <li>Haber finalizado el colegio secundario...</li>
-      <li>Contar con buen expediente académico...</li>
-      <li>Vocación de servicio...</li>
+      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
+      <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
+      <li>Contar con buen expediente académico y compromiso social.</li>
+      <li>Vocación de servicio e interés por ser agente de cambio.</li>
     </ul>
 
     <h2>Contenidos del programa</h2>
@@ -263,35 +297,34 @@
   <footer class="contacto">
     <p>redactioargentina@gmail.com | @red.actio</p>
     <p>CUIL No. 00-000000000-0</p>
-    <div class="footer-logos">
-      <img src="https://pbs.twimg.com/profile_images/1283194599230656518/w-jtPYkO_400x400.jpg" alt="Logo Red Actio" />
-      <img src="https://www.voluntare.org/wp-content/uploads/2022/07/logo-fundacion-botin.png" alt="Logo Fundación Botín" />
-    </div>
   </footer>
 
-  <script>
-    const contenedor = document.getElementById("mision");
-    const frase = "Que más de las y los mejores se enamoren de lo público";
+<script>
+  const contenedor = document.getElementById("mision");
+  const frase = "Que más de las y los mejores se enamoren de lo público";
 
-    function animarFrase() {
-      contenedor.innerHTML = "";
-      frase.split("").forEach((letra, index) => {
-        const span = document.createElement("span");
-        span.textContent = letra;
-        span.style.animationDelay = `${index * 0.05}s`;
-        contenedor.appendChild(span);
-      });
-      const duracionAparicion = frase.length * 50 + 500;
-      setTimeout(() => {
-        contenedor.classList.add("blink");
-      }, duracionAparicion);
-      setTimeout(() => {
-        contenedor.classList.remove("blink");
-        animarFrase();
-      }, duracionAparicion + 1500);
-    }
+  function animarFrase() {
+    contenedor.innerHTML = "";
+    frase.split("").forEach((letra, index) => {
+      const span = document.createElement("span");
+      span.textContent = letra;
+      span.style.animationDelay = ${index * 0.05}s;
+      contenedor.appendChild(span);
+    });
+    const duracionAparicion = frase.length * 50 + 500;
+    setTimeout(() => {
+      contenedor.classList.add("blink");
+    }, duracionAparicion);
+    setTimeout(() => {
+      contenedor.classList.remove("blink");
+      animarFrase();
+    }, duracionAparicion + 1500);
+  }
+  animarFrase();
+</script>
 
-    animarFrase();
-  </script>
 </body>
 </html>
+![Logo-Actio-png](https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab)
+![LOGO-Botin-png](https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67)
+![Captura de pantalla 2025-05-16 215345](https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e)
