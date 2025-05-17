@@ -39,7 +39,7 @@
     }
 
     h2 {
-      background: linear-gradient(135deg, #050A30, #5A77A6);
+      background: #050A30;
       padding: 1.5rem;
       color: white;
       border-radius: 0.5rem;
