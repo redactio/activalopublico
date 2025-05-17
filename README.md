@@ -283,7 +283,7 @@
 
   <footer class="contacto">
     <p>redactioargentina@gmail.com | @red.actio</p>
-    <p>CUIL No. 00-000000000-0</p>
+    <p>CUIL No. 30-71735862-3</p>
   </footer>
 
   <script>
