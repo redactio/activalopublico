@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -8,21 +7,27 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #ffffff; /* Fondo blanco */
+      background-color: #ffffff;
       color: #051F3E;
       font-size: 5rem;
     }
 
     header {
-      background-color: #050A30;
+      background: linear-gradient(135deg, #050A30, #5A77A6);
       color: white;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 4.5rem; /* Más grande */
+      font-size: 6rem;
       text-transform: uppercase;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 2.5rem;
+      margin-top: 1rem;
     }
 
     section {
@@ -36,7 +41,7 @@
       padding: 1.5rem;
       color: white;
       border-radius: 0.5rem;
-      text-align: center; /* Centrado */
+      text-align: center;
       margin-top: 2rem;
       opacity: 0;
       animation: fadeIn 1.2s ease forwards;
@@ -54,6 +59,24 @@
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    .inscribite-btn {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      background-color: #5A77A6;
+      color: white;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .inscribite-btn:hover {
+      background-color: #3b558a;
     }
 
     footer {
@@ -144,7 +167,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Activá lo Público</h1>
     <p>El programa para enamorar a las y los jóvenes de lo público</p>
@@ -156,6 +178,8 @@
 
     <h2>¿Por qué “Activá lo Público”?</h2>
     <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
+
+    <a class="inscribite-btn" href="https://www.redactio.github.io/activalopublico" target="_blank">¡Inscribite!</a>
 
     <h2>Nuestros aliados</h2>
     <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
@@ -240,27 +264,22 @@
   const frase = "Que más de las y los mejores se enamoren de lo público";
 
   function animarFrase() {
-    contenedor.innerHTML = ""; // limpiar para reiniciar
-
+    contenedor.innerHTML = "";
     frase.split("").forEach((letra, index) => {
       const span = document.createElement("span");
       span.textContent = letra;
       span.style.animationDelay = `${index * 0.05}s`;
       contenedor.appendChild(span);
     });
-
     const duracionAparicion = frase.length * 50 + 500;
-
     setTimeout(() => {
       contenedor.classList.add("blink");
     }, duracionAparicion);
-
     setTimeout(() => {
       contenedor.classList.remove("blink");
       animarFrase();
     }, duracionAparicion + 1500);
   }
-
   animarFrase();
 </script>
 
