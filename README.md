@@ -206,7 +206,7 @@
     <h2>¿Por qué “Activá lo Público”?</h2>
     <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
 
-   <a href="https://redactio.github.io/activalopublico" class="postulate-btn">¡Click acá para inscribirte!</a>
+   <a href="https://forms.gle/5uMA4SgbkYEFns859" class="postulate-btn">¡Click acá para inscribirte!</a>
    
     <h2>Nuestros aliados</h2>
     <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
