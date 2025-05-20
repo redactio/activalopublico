@@ -197,7 +197,7 @@
       <img src="https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e" alt="Captura de pantalla 2025-05-16 215345" />
     </div>
     <h1>Activá lo público</h1>
-    <p>El programa para enamorar a las y los jóvenes de lo público</p>
+    <p>El programa para enamorar a las juventudes de lo público</p>
   </header>
   <section>
     <h2>¿Quiénes somos?</h2>
