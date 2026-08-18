@@ -1,320 +1,306 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACTIVÁ LO PÚBLICO</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Nunito', sans-serif;
-      margin: 0;
-      background-color: #ffffff;
-      color: #051F3E;
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activá lo Público</title>
+    <style>
+        /* Estilos Generales y Reseteo */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    header {
-      background: linear-gradient(135deg, #050A30, #5A77A6);
-      color: white;
-      padding: 2rem 2rem;
-      text-align: left;
-      border-radius: 0.2rem;
-    }
+        /* Header Responsivo */
+        header {
+            background: linear-gradient(135deg, #050A30, #5A77A6);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center; /* Centrado para mejor vista móvil */
+            position: relative;
+        }
+        .header-logos {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header-logos img {
+            height: 60px;
+            border-radius: 0.5rem;
+            background-color: white; /* Por si los logos tienen transparencia */
+            padding: 5px;
+        }
+        header h1 {
+            /* Uso de clamp para escalar el texto según la pantalla */
+            font-size: clamp(3rem, 8vw, 8rem);
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.1;
+        }
+        header p {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-top: 1rem;
+            font-weight: 300;
+        }
 
-    .header-logos {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      display: flex;
-      gap: 1rem;
-    }
+        /* Secciones */
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        /* Títulos H2 Animados */
+        h2 {
+            background: #051F3E;
+            padding: 1.5rem;
+            color: white;
+            border-radius: 0.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 1.2s ease forwards;
+        }
+        h2:nth-of-type(1) { animation-delay: 0.3s; }
+        h2:nth-of-type(2) { animation-delay: 0.6s; }
+        h2:nth-of-type(3) { animation-delay: 0.9s; }
+        h2:nth-of-type(4) { animation-delay: 1.2s; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    .header-logos img {
-      height: 60px;
-      border-radius: 0.5rem;
-    }
+        /* Misión Destacada */
+        .mision-destacada {
+            background-color: #050A30;
+            color: #FFFFFF;
+            padding: 3rem 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .mision-destacada h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #7393C6;
+        }
 
-    header h1 {
-      font-size: 10rem;
-      text-transform: uppercase;
-      margin: 0;
-    }
+        /* Listas y Criterios */
+        .criterios, .contenidos {
+            list-style: none;
+            padding: 0;
+        }
+        .criterios li, .contenidos li {
+            background: white;
+            margin-bottom: 0.8rem;
+            padding: 1rem;
+            border-left: 5px solid #5A77A6;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
 
-    header p {
-      font-size:1.5rem;
-      margin-top: 1rem;
-    }
+        /* Timeline (Fechas Clave) */
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding-left: 30px;
+            border-left: 4px solid #5A77A6;
+        }
+        .event {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .event::before {
+            content: '';
+            position: absolute;
+            left: -39px;
+            top: 0.2rem;
+            width: 15px;
+            height: 15px;
+            background-color: #050A30;
+            border-radius: 50%;
+            border: 3px solid #5A77A6;
+        }
+        .event h4 {
+            margin: 0;
+            color: #050A30;
+            font-size: 1.2rem;
+        }
+        .event p {
+            margin: 0.2rem 0 0 0;
+            color: #555;
+        }
 
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
+        /* Botón de Postulación */
+        .postulate-btn {
+            display: block;
+            width: fit-content;
+            margin: 3rem auto;
+            background: linear-gradient(135deg, #050A30, #5A77A6);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 0.6rem;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(5, 10, 48, 0.4);
+        }
+        .postulate-btn:hover {
+            background: linear-gradient(135deg, #051F3E, #7393C6);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(5, 10, 48, 0.6);
+        }
 
-    h2 {
-      background: #051F3E;
-      padding: 1.5rem;
-      color: white;
-      border-radius: 0.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-top: 1.5rem;
-      opacity: 0;
-      animation: fadeIn 1.2s ease forwards;
-    }
+        /* Footer y Contacto */
+        footer {
+            background-color: #051F3E;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        .contacto {
+            background-color: #7393C6;
+            padding: 1.5rem;
+            color: white;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .contacto p {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
 
-    h2:nth-of-type(1) { animation-delay: 0.3s; }
-    h2:nth-of-type(2) { animation-delay: 0.6s; }
-    h2:nth-of-type(3) { animation-delay: 0.9s; }
-    h2:nth-of-type(4) { animation-delay: 1.2s; }
-    h2:nth-of-type(5) { animation-delay: 1.5s; }
-    h2:nth-of-type(6) { animation-delay: 1.8s; }
-    h2:nth-of-type(7) { animation-delay: 2.1s; }
-    h2:nth-of-type(8) { animation-delay: 2.4s; }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .postulate-btn {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto;
-      background: linear-gradient(135deg, #050A30, #5A77A6);
-      color: white;
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 0.6rem;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .postulate-btn:hover {
-      background-color: #3b558a;
-    }
-
-    footer {
-      background-color: #051F3E;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .contacto {
-      background-color: #7393C6;
-      padding: 1rem;
-      color: white;
-    }
-
-    .timeline {
-      position: relative;
-      margin: 2rem 0;
-      padding-left: 30px;
-      border-left: 4px solid #5A77A6;
-    }
-
-    .event {
-      margin-bottom: 1.5rem;
-      position: relative;
-    }
-
-    .event::before {
-      content: '';
-      position: absolute;
-      left: -10px;
-      top: 0.3rem;
-      width: 15px;
-      height: 15px;
-      background-color: #050A30;
-      border-radius: 50%;
-      border: 2px solid #5A77A6;
-    }
-
-    .event h4 {
-      margin: 0;
-      color: #050A30;
-    }
-
-    .event p {
-      margin: 0.2rem 0 0 0;
-    }
-
-    .mision-destacada {
-      background-color: #050A30;
-      color: #FFFFFF;
-      padding: 2rem;
-      margin-top: 2rem;
-      text-align: center;
-      border-radius: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 150px;
-    }
-
-    .mision-animada {
-      font-size: 1.5rem;
-      font-weight: bold;
-      display: inline-block;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    .mision-animada span {
-      opacity: 0;
-      animation: escribir 0.05s forwards;
-    }
-
-    .mision-animada.completa {
-      animation: titilar 1s ease-in-out 3s 2;
-    }
-
-    .criterios li {
-      margin-bottom: 0.8rem;
-    }
-
-    @keyframes escribir {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes titilar {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-  </style>
+        /* Media Queries para Tablets y Móviles */
+        @media (min-width: 768px) {
+            header {
+                text-align: left;
+                padding: 6rem 4rem;
+            }
+            .header-logos {
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="header-logos">
-      <img src="https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab" alt="Logo-Actio-png" />
-      <img src="https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67" alt="LOGO-Botin-png" />
-      <img src="https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e" alt="Captura de pantalla 2025-05-16 215345" />
-    </div>
-    <h1>Activá lo público</h1>
-    <p>El programa para enamorar a las juventudes de lo público</p>
-  </header>
-  <section>
-    <h2>¿Quiénes somos?</h2>
-    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración para promover y fortalecer la función pública en el país.</p>
 
-    <h2>¿Por qué “Activá lo Público”?</h2>
-    <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
-
-   <a href="https://forms.gle/5uMA4SgbkYEFns859" class="postulate-btn">¡Click acá para inscribirte!</a>
-   
-    <h2>Nuestros aliados</h2>
-    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
-
-    <h2>Misión</h2>
-    <div class="mision-destacada">
-      <p class="mision-animada" id="mision"></p>
-    </div>
-
-    <h2>Visión</h2>
-    <p>Llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.</p>
-
-    <h2>Público objetivo</h2>
-    <p>Jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.</p>
-
-    <h2>Cronograma</h2>
-    <div class="timeline">
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>17 de mayo</h3>
-          <p>Lanzamiento del programa y apertura de inscripciones</p>
+    <header>
+        <div class="header-logos">
+            <!-- Reemplaza el src con la ruta real a tus logos en el repo -->
+            <img src="logo-actio.png" alt="Actio">
+            <img src="logo-botin.png" alt="Fundación Botín[cite: 1]">
         </div>
-      </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>7 de junio</h3>
-          <p>Cierre de postulaciones</p>
+        <h1>Activá<br>lo Público</h1>
+        <p>El programa para enamorar a las juventudes de lo público.[cite: 1]</p>
+        <a href="#fechas" class="postulate-btn">#SeActiva[cite: 1]</a>
+    </header>
+
+    <section>
+        <div class="mision-destacada">
+            <h3>Nuestra Misión</h3>
+            <p>Que más de las y los mejores se enamoren de lo público.[cite: 1]</p>
         </div>
-      </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>15 de junio al 2 de julio</h3>
-          <p>Evaluación de postulaciones y entrevistas</p>
+
+        <h2>¿Quiénes Somos?</h2>
+        <p><strong>Actio</strong> es una asociación civil formada por personas comprometidas con la función pública en Argentina, fundada en 2020 por ex becarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín. Actualmente reúne a 74 miembros.[cite: 1]</p>
+        <br>
+        <p>Nuestro principal aliado es la <strong>Fundación Botín</strong>, creada en 1964, que actúa en toda España y América Latina con la misión de contribuir al desarrollo integral de la sociedad.[cite: 1]</p>
+
+        <h2>El Programa</h2>
+        <p>Buscamos llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.[cite: 1]</p>
+        <br>
+        <h3>Etapa Virtual</h3>
+        <p>Participan 50 jóvenes de todas las provincias argentinas. Incluye clases magistrales semanales, conversaciones, talleres de simulación de toma de decisiones y encuentros virtuales con referentes de nuestro país y toda Latinoamérica.[cite: 1]</p>
+        <br>
+        <h3>Etapa Presencial</h3>
+        <p>Se seleccionarán 25 participantes con base en su desempeño e interés demostrado en la fase virtual. Se realizará en la Provincia de Córdoba, en el camping de AGEC (Santa Ana).[cite: 1] Sus tres ejes fundamentales son:</p>
+        <ul class="contenidos">
+            <li>Actividad vivencial.[cite: 1]</li>
+            <li>Conversaciones con líderes.[cite: 1]</li>
+            <li>Espacios de networking.[cite: 1]</li>
+        </ul>
+
+        <h2>Público y Criterios de Selección</h2>
+        <p>El programa está dirigido a jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.[cite: 1]</p>
+        <br>
+        <ul class="criterios">
+            <li>Poseer nacionalidad argentina.[cite: 1]</li>
+            <li>Haber nacido entre el 14 de Julio de 2004 y el 13 de Julio de 2008 inclusive.[cite: 1]</li>
+            <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.[cite: 1]</li>
+            <li>Contar con buen expediente académico y compromiso social.[cite: 1]</li>
+            <li>Vocación de servicio e interés por ser agente de cambio.[cite: 1]</li>
+        </ul>
+
+        <h2>Fechas Clave</h2>
+        <div class="timeline">
+            <div class="event">
+                <h4>27 de Abril</h4>
+                <p>Lanzamiento y apertura de postulaciones.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>29 de Mayo</h4>
+                <p>Cierre del período de postulaciones.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>Hasta el 24 de Junio</h4>
+                <p>Período de evaluación de postulaciones.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>Hasta el 1 de Julio</h4>
+                <p>Etapa de entrevistas.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>5 de Julio</h4>
+                <p>Inicio de la etapa virtual.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>22 de Julio</h4>
+                <p>Anuncio de seleccionados y seleccionadas.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>9 de Septiembre</h4>
+                <p>Fin de la etapa virtual.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>14 de Septiembre</h4>
+                <p>Anuncio de seleccionados y seleccionadas para la etapa presencial.[cite: 1]</p>
+            </div>
+            <div class="event">
+                <h4>2, 3 y 4 de Octubre</h4>
+                <p>Etapa presencial.[cite: 1]</p>
+            </div>
         </div>
-      </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>9 de julio</h3>
-          <p>Anuncio de seleccionados para la etapa virtual</p>
+
+        <!-- Enlace a formulario de postulación: reemplazar el href "#" por el link real de Google Forms/Typeform -->
+        <a href="#" class="postulate-btn">Postulate Aquí</a>
+    </section>
+
+    <footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Email: redactioargentina@gmail.com[cite: 1]</p>
+            <p>Instagram: @red.actio[cite: 1]</p>
         </div>
-      </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>6 de agosto</h3>
-          <p>Inicio de la etapa virtual</p>
-        </div>
-      </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>24 de septiembre</h3>
-          <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
-        </div>
-      </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>10, 11 y 12 de octubre</h3>
-          <p>Actividad presencial</p>
-        </div>
-      </div>
-    </div>
+        <p>© 2026 Activá lo Público. Desarrollado por la Asociación Civil Actio.[cite: 1]</p>
+    </footer>
 
-    <h2>Criterios de selección</h2>
-    <ul class="criterios">
-      <li>Poseer nacionalidad argentina.</li>
-      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007, inclusive.</li>
-      <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
-      <li>Contar con buen expediente académico y compromiso social.</li>
-      <li>Vocación de servicio e interés por ser agente de cambio.</li>
-    </ul>
-
-    <h2>Contenidos del programa</h2>
-    <p>“Lo público” como vocación. Democracia y participación ciudadana. El desarrollo de la Argentina. Transparencia, modernización e innovación. Diversidad, inclusión y equidad. Política internacional y latinoamericana. Tercer sector y sector privado.</p>
-  </section>
-
-  <footer class="contacto">
-    <p>redactioargentina@gmail.com | @red.actio</p>
-    <p>CUIT No. 30-71735862-3</p>
-  </footer>
-
-  <script>
-    const contenedor = document.getElementById("mision");
-    const frase = "Que más de las y los mejores se enamoren de lo público";
-
-    function animarFrase() {
-      contenedor.innerHTML = "";
-      frase.split("").forEach((letra, index) => {
-        const span = document.createElement("span");
-        span.textContent = letra;
-        span.style.animationDelay = `${index * 0.05}s`;
-        contenedor.appendChild(span);
-      });
-      const duracionAparicion = frase.length * 50 + 500;
-      setTimeout(() => {
-        contenedor.classList.add("blink");
-      }, duracionAparicion);
-      setTimeout(() => {
-        contenedor.classList.remove("blink");
-        animarFrase();
-      }, duracionAparicion + 1500);
-    }
-
-    animarFrase();
-  </script>
-
-  <div hidden>
-    ![Logo-Actio-png](https://github.com/user-attachments/assets/48e3ae4c-c28c-468c-8793-f1362cc618ab)
-    ![LOGO-Botin-png](https://github.com/user-attachments/assets/8c27d0b3-7736-4516-a002-5d0cefbbec67)
-    ![Captura de pantalla 2025-05-16 215345](https://github.com/user-attachments/assets/263fd0cc-be41-4ba9-8d70-602796f41f7e)
-  </div>
 </body>
 </html>
