@@ -23,7 +23,7 @@
             background: linear-gradient(135deg, #050A30, #5A77A6);
             color: white;
             padding: 4rem 2rem;
-            text-align: center; /* Centrado para mejor vista móvil */
+            text-align: center;
             position: relative;
         }
         .header-logos {
@@ -35,11 +35,10 @@
         .header-logos img {
             height: 60px;
             border-radius: 0.5rem;
-            background-color: white; /* Por si los logos tienen transparencia */
+            background-color: white;
             padding: 5px;
         }
         header h1 {
-            /* Uso de clamp para escalar el texto según la pantalla */
             font-size: clamp(3rem, 8vw, 8rem);
             text-transform: uppercase;
             margin: 0;
@@ -74,6 +73,7 @@
         h2:nth-of-type(2) { animation-delay: 0.6s; }
         h2:nth-of-type(3) { animation-delay: 0.9s; }
         h2:nth-of-type(4) { animation-delay: 1.2s; }
+        h2:nth-of-type(5) { animation-delay: 1.5s; }
         
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -204,102 +204,101 @@
 
     <header>
         <div class="header-logos">
-            <!-- Reemplaza el src con la ruta real a tus logos en el repo -->
-            <img src="logo-actio.png" alt="Actio">
-            <img src="logo-botin.png" alt="Fundación Botín[cite: 1]">
+            <img src="logo-actio.png" alt="Actio"><!--[cite: 1] -->
+            <img src="logo-botin.png" alt="Fundación Botín"><!--[cite: 1] -->
         </div>
         <h1>Activá<br>lo Público</h1>
-        <p>El programa para enamorar a las juventudes de lo público.[cite: 1]</p>
-        <a href="#fechas" class="postulate-btn">#SeActiva[cite: 1]</a>
+        <p>El programa para enamorar a las juventudes de lo público.<!--[cite: 1] --></p>
+        <a href="#fechas" class="postulate-btn">#SeActiva<!--[cite: 1] --></a>
     </header>
 
     <section>
         <div class="mision-destacada">
             <h3>Nuestra Misión</h3>
-            <p>Que más de las y los mejores se enamoren de lo público.[cite: 1]</p>
+            <p>Que más de las y los mejores se enamoren de lo público.<!--[cite: 1] --></p>
         </div>
 
         <h2>¿Quiénes Somos?</h2>
-        <p><strong>Actio</strong> es una asociación civil formada por personas comprometidas con la función pública en Argentina, fundada en 2020 por ex becarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín. Actualmente reúne a 74 miembros.[cite: 1]</p>
+        <p><strong>Actio</strong> es una asociación civil formada por personas comprometidas con la función pública en Argentina, fundada en 2020 por ex becarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín. Actualmente reúne a 74 miembros.<!--[cite: 1] --></p>
         <br>
-        <p>Nuestro principal aliado es la <strong>Fundación Botín</strong>, creada en 1964, que actúa en toda España y América Latina con la misión de contribuir al desarrollo integral de la sociedad.[cite: 1]</p>
+        <p>Nuestro principal aliado es la <strong>Fundación Botín</strong>, creada en 1964, que actúa en toda España y América Latina con la misión de contribuir al desarrollo integral de la sociedad.<!--[cite: 1] --></p>
 
         <h2>El Programa</h2>
-        <p>Buscamos llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.[cite: 1]</p>
+        <p>Buscamos llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.<!--[cite: 1] --></p>
         <br>
         <h3>Etapa Virtual</h3>
-        <p>Participan 50 jóvenes de todas las provincias argentinas. Incluye clases magistrales semanales, conversaciones, talleres de simulación de toma de decisiones y encuentros virtuales con referentes de nuestro país y toda Latinoamérica.[cite: 1]</p>
+        <p>Participan 50 jóvenes de todas las provincias argentinas. Incluye clases magistrales semanales, conversaciones, talleres de simulación de toma de decisiones y encuentros virtuales con referentes de nuestro país y toda Latinoamérica.<!--[cite: 1] --></p>
         <br>
         <h3>Etapa Presencial</h3>
-        <p>Se seleccionarán 25 participantes con base en su desempeño e interés demostrado en la fase virtual. Se realizará en la Provincia de Córdoba, en el camping de AGEC (Santa Ana).[cite: 1] Sus tres ejes fundamentales son:</p>
+        <p>Se seleccionarán 25 participantes con base en su desempeño e interés demostrado en la fase virtual. Se realizará en la Provincia de Córdoba, en el camping de AGEC (Santa Ana).<!--[cite: 1] --> Sus tres ejes fundamentales son:</p>
         <ul class="contenidos">
-            <li>Actividad vivencial.[cite: 1]</li>
-            <li>Conversaciones con líderes.[cite: 1]</li>
-            <li>Espacios de networking.[cite: 1]</li>
+            <li>Actividad vivencial.<!--[cite: 1] --></li>
+            <li>Conversaciones con líderes.<!--[cite: 1] --></li>
+            <li>Espacios de networking.<!--[cite: 1] --></li>
         </ul>
 
         <h2>Público y Criterios de Selección</h2>
-        <p>El programa está dirigido a jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.[cite: 1]</p>
+        <p>El programa está dirigido a jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.<!--[cite: 1] --></p>
         <br>
         <ul class="criterios">
-            <li>Poseer nacionalidad argentina.[cite: 1]</li>
-            <li>Haber nacido entre el 14 de Julio de 2004 y el 13 de Julio de 2008 inclusive.[cite: 1]</li>
-            <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.[cite: 1]</li>
-            <li>Contar con buen expediente académico y compromiso social.[cite: 1]</li>
-            <li>Vocación de servicio e interés por ser agente de cambio.[cite: 1]</li>
+            <li>Poseer nacionalidad argentina.<!--[cite: 1] --></li>
+            <li>Haber nacido entre el 14 de Julio de 2004 y el 13 de Julio de 2008 inclusive.<!--[cite: 1] --></li>
+            <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.<!--[cite: 1] --></li>
+            <li>Contar con buen expediente académico y compromiso social.<!--[cite: 1] --></li>
+            <li>Vocación de servicio e interés por ser agente de cambio.<!--[cite: 1] --></li>
         </ul>
 
-        <h2>Fechas Clave</h2>
+        <h2 id="fechas">Fechas Clave</h2>
         <div class="timeline">
             <div class="event">
                 <h4>27 de Abril</h4>
-                <p>Lanzamiento y apertura de postulaciones.[cite: 1]</p>
+                <p>Lanzamiento y apertura de postulaciones.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>29 de Mayo</h4>
-                <p>Cierre del período de postulaciones.[cite: 1]</p>
+                <p>Cierre del período de postulaciones.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>Hasta el 24 de Junio</h4>
-                <p>Período de evaluación de postulaciones.[cite: 1]</p>
+                <p>Período de evaluación de postulaciones.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>Hasta el 1 de Julio</h4>
-                <p>Etapa de entrevistas.[cite: 1]</p>
+                <p>Etapa de entrevistas.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>5 de Julio</h4>
-                <p>Inicio de la etapa virtual.[cite: 1]</p>
+                <p>Inicio de la etapa virtual.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>22 de Julio</h4>
-                <p>Anuncio de seleccionados y seleccionadas.[cite: 1]</p>
+                <p>Anuncio de seleccionados y seleccionadas.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>9 de Septiembre</h4>
-                <p>Fin de la etapa virtual.[cite: 1]</p>
+                <p>Fin de la etapa virtual.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>14 de Septiembre</h4>
-                <p>Anuncio de seleccionados y seleccionadas para la etapa presencial.[cite: 1]</p>
+                <p>Anuncio de seleccionados y seleccionadas para la etapa presencial.<!--[cite: 1] --></p>
             </div>
             <div class="event">
                 <h4>2, 3 y 4 de Octubre</h4>
-                <p>Etapa presencial.[cite: 1]</p>
+                <p>Etapa presencial.<!--[cite: 1] --></p>
             </div>
         </div>
 
-        <!-- Enlace a formulario de postulación: reemplazar el href "#" por el link real de Google Forms/Typeform -->
-        <a href="#" class="postulate-btn">Postulate Aquí</a>
+        <!-- REEMPLAZÁ ACÁ EL LINK DE POSTULACIÓN -->
+        <a href="https://ejemplo.com/tu-formulario" target="_blank" class="postulate-btn">Postulate Aquí</a>
     </section>
 
     <footer>
         <div class="contacto">
             <h3>Contacto</h3>
-            <p>Email: redactioargentina@gmail.com[cite: 1]</p>
-            <p>Instagram: @red.actio[cite: 1]</p>
+            <p>Email: redactioargentina@gmail.com<!--[cite: 1] --></p>
+            <p>Instagram: @red.actio<!--[cite: 1] --></p>
         </div>
-        <p>© 2026 Activá lo Público. Desarrollado por la Asociación Civil Actio.[cite: 1]</p>
+        <p>© 2026 Activá lo Público. Desarrollado por la Asociación Civil Actio.<!--[cite: 1] --></p>
     </footer>
 
 </body>
