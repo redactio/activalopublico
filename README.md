@@ -532,7 +532,7 @@
             </div>
         </div>
 
-        <a href="https://ejemplo.com/tu-formulario" target="_blank" class="postulate-btn">Postulate Aquí</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8UXKnP1Wgiz1MV9g4C8mYZVBhqbL7IvHLtiNJA6kRepQPYQ/viewform?usp=dialog" target="_blank" class="postulate-btn">Postulate Aquí</a>
     </section>
 
     <footer>
